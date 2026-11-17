@@ -1,0 +1,19 @@
+# Local builds (tools/build.sh, tools/diff.sh)
+build/
+
+# LaTeX by-products
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.spl
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+main.pdf

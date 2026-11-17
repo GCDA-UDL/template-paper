@@ -1,0 +1,31 @@
+%% Reply to the reviewers. Build: bash tools/build.sh letters/response_to_reviewers
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{revnotes}% \pending{} marks open answers; mode=final refuses to build with any left
+\usepackage{framed}
+\definecolor{shadecolor}{gray}{0.93}
+% Reviewer comment on a grey background; long comments break across pages.
+\newenvironment{reviewer}[1]{\par\medskip\noindent\textbf{#1}\par\nopagebreak
+  \begin{shaded}\itshape}{\end{shaded}}
+\newcommand{\response}{\par\noindent\textbf{Response.}~}
+
+\begin{document}
+\noindent\textbf{Manuscript:} \pending{manuscript id} --- \pending{title}\\
+\textbf{Journal:} \pending{journal}
+
+\medskip\noindent Dear Editor,
+
+\noindent We thank the editor and the reviewers for their comments. Below, each comment is followed by our
+response and the place where the manuscript changed. Changed text is marked in the revised manuscript.
+
+\section*{Reviewer 1}
+\begin{reviewer}{Comment 1.1}
+Text of the comment.
+\end{reviewer}
+\response Our answer. Changed in Section~X, page Y.
+
+\end{document}
